@@ -1,9 +1,6 @@
 # UTC2LOCAL-bot
 Bot for discord to convert utc to local time
 
-
-# UTC Time Helper (Discord Bot)
-
 A tiny Discord bot that turns a **UTC time** into a Discord **dynamic timestamp** (`<t:...>`) so **every viewer** sees it in their **own local timezone**.
 
 Example reply:

@@ -1,0 +1,6 @@
+# Required
+DISCORD_TOKEN=YOUR_BOT_TOKEN_HERE
+
+# Optional: speeds up slash-command registration to a single server during development
+# Find your Server (Guild) ID by enabling Developer Mode in Discord, right-click server icon -> Copy ID
+GUILD_ID=YOUR_GUILD_ID_HERE

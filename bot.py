@@ -514,6 +514,34 @@ async def utc(interaction: discord.Interaction, when: str):
             "Invalid format. Use **HH:MM** or **YYYY-MM-DD HH:MM** (UTC).", ephemeral=True
         )
 
+# -----------------------------
+# Autocomplete handlers (must be defined before they're used)
+# -----------------------------
+async def autocomplete_event(
+    interaction: discord.Interaction,
+    current: str
+) -> List[app_commands.Choice[str]]:
+    current_lower = (current or "").lower()
+    names = get_event_names()
+    if current_lower:
+        names = [n for n in names if current_lower in n.lower()]
+    return [app_commands.Choice(name=n, value=n) for n in names[:25]]
+
+async def autocomplete_day(
+    interaction: discord.Interaction,
+    current: str
+) -> List[app_commands.Choice[str]]:
+    ns = interaction.namespace
+    ev_name = getattr(ns, "event", None)
+    if not ev_name or ev_name not in EVENTS:
+        return []
+    day_names = get_day_names(ev_name)
+    current_lower = (current or "").lower()
+    if current_lower:
+        day_names = [n for n in day_names if current_lower in n.lower()]
+    return [app_commands.Choice(name=n, value=n) for n in day_names[:25]]
+
+
 # /event command with autocomplete + optional interactive day picker
 @bot.tree.command(
     name="event",
@@ -524,8 +552,8 @@ async def utc(interaction: discord.Interaction, when: str):
     day="Day/Stage (optional—picker appears if omitted and multiple days exist)",
     public="Check to post publicly; default is private (ephemeral)",
 )
-@app_commands.autocomplete(event=lambda i, c: autocomplete_event(i, c),
-                           day=lambda i, c: autocomplete_day(i, c))
+
+@app_commands.autocomplete(event=autocomplete_event, day=autocomplete_day)
 async def event(
     interaction: discord.Interaction,
     event: str,

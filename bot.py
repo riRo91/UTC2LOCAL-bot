@@ -2,10 +2,14 @@ import os
 import discord
 from discord import app_commands
 from datetime import datetime, timezone
-from typing import List, Dict, Any, Optional, Tuple
+from typing import List, Dict, Any, Tuple
 
 TOKEN = os.getenv("DISCORD_TOKEN")
-GUILD_ID = os.getenv("GUILD_ID")  # Optional: speeds up slash command registration for one server
+GUILD_ID_ENV = os.getenv("GUILD_ID")  # Optional: speeds up slash command registration for one server
+GUILD_OBJ = None
+if GUILD_ID_ENV and GUILD_ID_ENV.isdigit():
+    GUILD_OBJ = discord.Object(id=int(GUILD_ID_ENV))
+
 
 # -----------------------------
 # Event Catalog (from your data)
@@ -356,20 +360,29 @@ class TimeBot(discord.Client):
         intents = discord.Intents.default()
         super().__init__(intents=intents)
         self.tree = app_commands.CommandTree(self)
+        self._synced = False
 
     async def setup_hook(self):
-        # Faster per-guild sync if GUILD_ID is set; otherwise global sync
-        if GUILD_ID:
-            try:
-                gid = int(GUILD_ID)
-                await self.tree.sync(guild=discord.Object(id=gid))
-                print(f"Slash commands synced to guild {gid}")
-            except ValueError:
-                print("Invalid GUILD_ID; doing global sync instead.")
-                await self.tree.sync()
+        # Prefer fast per-guild sync when GUILD_ID is provided
+        if GUILD_OBJ:
+            cmds = await self.tree.sync(guild=GUILD_OBJ)
+            print(f"[setup_hook] Per-guild sync to {GUILD_ID_ENV}: {len(cmds)} command(s)")
         else:
-            await self.tree.sync()
-            print("Slash commands globally synced.")
+            cmds = await self.tree.sync()  # global sync
+            print(f"[setup_hook] Global sync: {len(cmds)} command(s)")
+
+    async def on_ready(self):
+        print(f"Logged in as {self.user} (id={self.user.id})")
+        # If we didn't have a GUILD_ID, copy globals to each joined guild for immediate availability
+        if not GUILD_OBJ and not self._synced:
+            for g in self.guilds:
+                try:
+                    self.tree.copy_global_to(guild=g)
+                    cmds = await self.tree.sync(guild=g)
+                    print(f"[on_ready] Copied and synced to guild {g.name} ({g.id}): {len(cmds)} command(s)")
+                except Exception as e:
+                    print(f"[on_ready] Failed to sync to {g.name} ({g.id}): {type(e).__name__}: {e}")
+            self._synced = True
 
 
 bot = TimeBot()
@@ -463,7 +476,8 @@ def build_event_embeds(event_name: str, day_name: str) -> List[discord.Embed]:
 # =========================================
 @bot.tree.command(
     name="utc",
-    description="Convert a UTC time to a Discord timestamp that renders in everyone's local time."
+    description="Convert a UTC time to a Discord timestamp that renders in everyone's local time.",
+    guild=GUILD_OBJ,  # per-guild install if provided
 )
 @app_commands.describe(when="Time in 'HH:MM' or 'YYYY-MM-DD HH:MM' (UTC)")
 async def utc(interaction: discord.Interaction, when: str):
@@ -559,6 +573,7 @@ class DayPickerView(discord.ui.View):
 @bot.tree.command(
     name="event",
     description="Show scoring and personal tasks + rewards for a game event/day.",
+    guild=GUILD_OBJ,  # per-guild install if provided
 )
 @app_commands.describe(
     event="Event name (start typing for suggestions)",
@@ -627,6 +642,38 @@ async def event(
 
 
 # =========================================
+# /sync COMMAND — force sync to the current guild
+# =========================================
+@bot.tree.command(
+    name="sync",
+    description="Force-sync slash commands to this server.",
+    guild=GUILD_OBJ,  # per-guild install if provided
+)
+async def sync_cmd(interaction: discord.Interaction):
+    # Works even if you didn't set GUILD_ID
+    try:
+        if interaction.guild is None:
+            await interaction.response.send_message("Run this in a server, not in DMs.", ephemeral=True)
+            return
+        bot.tree.copy_global_to(guild=interaction.guild)
+        cmds = await bot.tree.sync(guild=interaction.guild)
+        await interaction.response.send_message(
+            f"Synced **{len(cmds)}** command(s) to **{interaction.guild.name}**.",
+            ephemeral=True,
+        )
+    except Exception as e:
+        await interaction.response.send_message(
+            f"Sync failed: `{type(e).__name__}: {e}`", ephemeral=True
+        )
+        raise
+
+
+# =========================================
 # RUN
 # =========================================
+if not TOKEN:
+    raise SystemExit(
+        "Set your token first: export DISCORD_TOKEN=... (macOS/Linux) or $env:DISCORD_TOKEN='...' (PowerShell)"
+    )
+
 bot.run(TOKEN)

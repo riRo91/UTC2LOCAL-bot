@@ -1,0 +1,3156 @@
+{
+  "version": 1,
+  "source": "User paste (Notion export)",
+  "events": [
+    {
+      "id": "the-greatest-leader-single-server",
+      "name": "The Greatest Leader (Single Server)",
+      "summary": "",
+      "description": "",
+      "days": {
+        "Day1": {
+          "label": "Stage 1",
+          "summary": "",
+          "scoring": [
+            {
+              "action": "Per gathering 100 Food on the field",
+              "points": 3,
+              "notes": null
+            },
+            {
+              "action": "Per gathering 100 Wood on the field",
+              "points": 3,
+              "notes": null
+            },
+            {
+              "action": "Per gathering 100 Stone on the field",
+              "points": 3,
+              "notes": null
+            },
+            {
+              "action": "Per gathering 50 Gold on the field",
+              "points": 3,
+              "notes": null
+            },
+            {
+              "action": "Increase Power by 1 with research",
+              "points": 25,
+              "notes": null
+            },
+            {
+              "action": "Per 1 Lucky Ticket",
+              "points": 150000,
+              "notes": null
+            }
+          ],
+          "tasks": [
+            {
+              "task": "Gather 100.000 resources from the field",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Rare Spirit Shard",
+                  "qty": 1
+                },
+                {
+                  "item": "Silver Scroll",
+                  "qty": 1
+                },
+                {
+                  "item": "50.000 Food",
+                  "qty": 1
+                },
+                {
+                  "item": "50.000 Wood",
+                  "qty": 1
+                }
+              ]
+            },
+            {
+              "task": "Gather 300.000 resources from the field",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Rare Spirit Shard",
+                  "qty": 1
+                },
+                {
+                  "item": "Golden Scroll",
+                  "qty": 1
+                },
+                {
+                  "item": "50.000 Food",
+                  "qty": 2
+                },
+                {
+                  "item": "50.000 Wood",
+                  "qty": 2
+                }
+              ]
+            },
+            {
+              "task": "Gather 500.000 resources from the field",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Epic Spirit Shard",
+                  "qty": 1
+                },
+                {
+                  "item": "Golden Scroll",
+                  "qty": 1
+                },
+                {
+                  "item": "50.000 Food",
+                  "qty": 3
+                },
+                {
+                  "item": "50.000 Wood",
+                  "qty": 3
+                }
+              ]
+            },
+            {
+              "task": "Increase Power by 30.000 with Research",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Gem",
+                  "qty": 50
+                },
+                {
+                  "item": "Rare Spirit Badge",
+                  "qty": 1
+                },
+                {
+                  "item": "Silver Scroll",
+                  "qty": 1
+                },
+                {
+                  "item": "Speedup 5m",
+                  "qty": 5
+                }
+              ]
+            },
+            {
+              "task": "Increase Power by 60.000 with Research",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Gem",
+                  "qty": 100
+                },
+                {
+                  "item": "Rare Spirit Badge",
+                  "qty": 1
+                },
+                {
+                  "item": "Golden Scroll",
+                  "qty": 1
+                },
+                {
+                  "item": "Speedup 60m",
+                  "qty": 1
+                }
+              ]
+            },
+            {
+              "task": "Increase Power by 90.000 with Research",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Gem",
+                  "qty": 200
+                },
+                {
+                  "item": "Legendary Spirit Badge",
+                  "qty": 1
+                },
+                {
+                  "item": "Golden Scroll",
+                  "qty": 1
+                },
+                {
+                  "item": "Speedup 60m",
+                  "qty": 2
+                }
+              ]
+            }
+          ]
+        },
+        "Day2": {
+          "label": "Stage 2",
+          "summary": "",
+          "scoring": [
+            {
+              "action": "Per recruiting 1 bender (Tier 1)",
+              "points": 25,
+              "notes": null
+            },
+            {
+              "action": "Per recruiting 1 bender (Tier 2)",
+              "points": 50,
+              "notes": null
+            },
+            {
+              "action": "Per recruiting 1 bender (Tier 3)",
+              "points": 75,
+              "notes": null
+            },
+            {
+              "action": "Per recruiting 1 bender (Tier 4)",
+              "points": 100,
+              "notes": null
+            },
+            {
+              "action": "Per recruiting 1 bender (Tier 5)",
+              "points": 150,
+              "notes": null
+            },
+            {
+              "action": "Per recruiting 1 bender (Tier 6)",
+              "points": 350,
+              "notes": null
+            },
+            {
+              "action": "Per 1 Lucky Ticket",
+              "points": 150000,
+              "notes": null
+            }
+          ],
+          "tasks": [
+            {
+              "task": "Recruit 1.000 Tier 2 or Higher Benders",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Gem",
+                  "qty": 30
+                },
+                {
+                  "item": "Rare Spirit Badge",
+                  "qty": 1
+                },
+                {
+                  "item": "Silver Scroll",
+                  "qty": 1
+                },
+                {
+                  "item": "Speedup 5m",
+                  "qty": 5
+                }
+              ]
+            },
+            {
+              "task": "Recruit 3.000 Tier 2 or Higher Benders",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Gem",
+                  "qty": 60
+                },
+                {
+                  "item": "Rare Spirit Badge",
+                  "qty": 1
+                },
+                {
+                  "item": "Silver Scroll",
+                  "qty": 1
+                },
+                {
+                  "item": "Speedup 5m",
+                  "qty": 10
+                }
+              ]
+            },
+            {
+              "task": "Recruit 6.000 Tier 2 or Higher Benders",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Gem",
+                  "qty": 90
+                },
+                {
+                  "item": "Epic Spirit Badge",
+                  "qty": 1
+                },
+                {
+                  "item": "Silver Scroll",
+                  "qty": 1
+                },
+                {
+                  "item": "Speedup 5m",
+                  "qty": 15
+                }
+              ]
+            },
+            {
+              "task": "Recruit 12.000 Tier 2 or Higher Benders",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Gem",
+                  "qty": 120
+                },
+                {
+                  "item": "Epic Spirit Badge",
+                  "qty": 1
+                },
+                {
+                  "item": "Golden Scroll",
+                  "qty": 1
+                },
+                {
+                  "item": "Speedup 60m",
+                  "qty": 2
+                }
+              ]
+            },
+            {
+              "task": "Recruit 18.000 Tier 2 or Higher Benders",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Gem",
+                  "qty": 150
+                },
+                {
+                  "item": "Legendary Spirit Badge",
+                  "qty": 1
+                },
+                {
+                  "item": "Golden Scroll",
+                  "qty": 1
+                },
+                {
+                  "item": "Speedup 60m",
+                  "qty": 3
+                }
+              ]
+            },
+            {
+              "task": "Recruit 25.000 Tier 2 or Higher Benders",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Gem",
+                  "qty": 200
+                },
+                {
+                  "item": "Legendary Spirit Shard",
+                  "qty": 1
+                },
+                {
+                  "item": "Golden Scroll",
+                  "qty": 1
+                },
+                {
+                  "item": "Speedup 60m",
+                  "qty": 5
+                }
+              ]
+            }
+          ]
+        },
+        "Day3": {
+          "label": "Stage 3",
+          "summary": "",
+          "scoring": [
+            {
+              "action": "Use a Silver Scroll",
+              "points": 750,
+              "notes": null
+            },
+            {
+              "action": "Use a Golden Scroll",
+              "points": 1500,
+              "notes": null
+            },
+            {
+              "action": "Use a Rare Hero Spirit Shard",
+              "points": 250,
+              "notes": null
+            },
+            {
+              "action": "Use an Epic Hero Spirit Shard",
+              "points": 1250,
+              "notes": null
+            },
+            {
+              "action": "Use a Legendary Hero Spirit Shard",
+              "points": 50000,
+              "notes": null
+            },
+            {
+              "action": "Use a Rare Hero Spirit Badge",
+              "points": 250,
+              "notes": null
+            },
+            {
+              "action": "Use an Epic Hero Spirit Badge",
+              "points": 1250,
+              "notes": null
+            },
+            {
+              "action": "Use a Legendary Hero Spirit Badge",
+              "points": 50000,
+              "notes": null
+            },
+            {
+              "action": "Per 1 Lucky Ticket",
+              "points": 150000,
+              "notes": null
+            }
+          ],
+          "tasks": [
+            {
+              "task": "Use Silver Scrolls 10 time(s)",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Rare Spirit Shard",
+                  "qty": 1
+                },
+                {
+                  "item": "Silver Scroll",
+                  "qty": 5
+                },
+                {
+                  "item": "Book of Experience (1.000)",
+                  "qty": 1
+                },
+                {
+                  "item": "Research Speedup 60m",
+                  "qty": 1
+                }
+              ]
+            },
+            {
+              "task": "Use Golden Scrolls 10 time(s)",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Epic Spirit Shard",
+                  "qty": 1
+                },
+                {
+                  "item": "Golden Scroll",
+                  "qty": 5
+                },
+                {
+                  "item": "Book of Experience (5.000)",
+                  "qty": 1
+                },
+                {
+                  "item": "Research Speedup 60m",
+                  "qty": 2
+                }
+              ]
+            },
+            {
+              "task": "Skill up any hero 1 time(s)",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Rare Spirit Badge",
+                  "qty": 3
+                },
+                {
+                  "item": "Silver Scroll",
+                  "qty": 1
+                },
+                {
+                  "item": "Book of Experience (1.000)",
+                  "qty": 1
+                },
+                {
+                  "item": "Research Speedup 60m",
+                  "qty": 1
+                }
+              ]
+            },
+            {
+              "task": "Skill up any hero 3 time(s)",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Epic Spirit Badge",
+                  "qty": 1
+                },
+                {
+                  "item": "Golden Scroll",
+                  "qty": 1
+                },
+                {
+                  "item": "Book of Experience (5.000)",
+                  "qty": 1
+                },
+                {
+                  "item": "Research Speedup 60m",
+                  "qty": 2
+                }
+              ]
+            },
+            {
+              "task": "Rank up any hero 1 time(s)",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Rare Spirit Shard",
+                  "qty": 3
+                },
+                {
+                  "item": "Silver Scroll",
+                  "qty": 1
+                },
+                {
+                  "item": "Book of Experience (1.000)",
+                  "qty": 1
+                },
+                {
+                  "item": "Research Speedup 60m",
+                  "qty": 1
+                }
+              ]
+            },
+            {
+              "task": "Rank up any hero 3 time(s)",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Rare Spirit Shard",
+                  "qty": 3
+                },
+                {
+                  "item": "Golden Scroll",
+                  "qty": 1
+                },
+                {
+                  "item": "Book of Experience (5.000)",
+                  "qty": 1
+                },
+                {
+                  "item": "Research Speedup 60m",
+                  "qty": 2
+                }
+              ]
+            }
+          ]
+        },
+        "Day4": {
+          "label": "Stage 4",
+          "summary": "",
+          "scoring": [
+            {
+              "action": "Shattered Skull Levels 1 ~ 5",
+              "points": 1500,
+              "notes": null
+            },
+            {
+              "action": "Shattered Skull Levels 6 ~ 10",
+              "points": 1800,
+              "notes": null
+            },
+            {
+              "action": "Shattered Skull Levels 11 ~ 15",
+              "points": 2100,
+              "notes": null
+            },
+            {
+              "action": "Shattered Skull Levels 16 ~ 20",
+              "points": 2400,
+              "notes": null
+            },
+            {
+              "action": "Shattered Skull Levels 21 ~ 25",
+              "points": 2700,
+              "notes": null
+            },
+            {
+              "action": "Shattered Skull Levels 26 ~ 30",
+              "points": 3000,
+              "notes": null
+            },
+            {
+              "action": "Shatterd Skulls’ Fortress 1",
+              "points": 10000,
+              "notes": null
+            },
+            {
+              "action": "Shatterd Skulls’ Fortress 2",
+              "points": 12000,
+              "notes": null
+            },
+            {
+              "action": "Shatterd Skulls’ Fortress 3",
+              "points": 14000,
+              "notes": null
+            },
+            {
+              "action": "Shatterd Skulls’ Fortress 4",
+              "points": 16000,
+              "notes": null
+            },
+            {
+              "action": "Increase construction Power by 1",
+              "points": 25,
+              "notes": null
+            }
+          ],
+          "tasks": [
+            {
+              "task": "Defeat Shattered Skulls 10 time(s)",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Rare Spirit Shard",
+                  "qty": 1
+                },
+                {
+                  "item": "Silver Scroll",
+                  "qty": 1
+                },
+                {
+                  "item": "Book of Experience (1.000)",
+                  "qty": 1
+                },
+                {
+                  "item": "Seal of Solidarity",
+                  "qty": 1
+                }
+              ]
+            },
+            {
+              "task": "Defeat Shattered Skulls 20 time(s)",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Epic Spirit Shard",
+                  "qty": 1
+                },
+                {
+                  "item": "Golden Scroll",
+                  "qty": 1
+                },
+                {
+                  "item": "Book of Experience (5.000)",
+                  "qty": 1
+                },
+                {
+                  "item": "Seal of Solidarity",
+                  "qty": 3
+                }
+              ]
+            },
+            {
+              "task": "Destroy Shattered Skulls’ Fortress 2 time(s)",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Rare Spirit Badge",
+                  "qty": 1
+                },
+                {
+                  "item": "Silver Scroll",
+                  "qty": 1
+                },
+                {
+                  "item": "Book of Experience (1.000)",
+                  "qty": 1
+                },
+                {
+                  "item": "Seal of Solidarity",
+                  "qty": 2
+                }
+              ]
+            },
+            {
+              "task": "Destroy Shattered Skulls’ Fortress 4 time(s)",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Epic Spirit Badge",
+                  "qty": 1
+                },
+                {
+                  "item": "Golden Scroll",
+                  "qty": 1
+                },
+                {
+                  "item": "Book of Experience (5.000)",
+                  "qty": 1
+                },
+                {
+                  "item": "Seal of Solidarity",
+                  "qty": 5
+                }
+              ]
+            },
+            {
+              "task": "Increase Power by 30.000 with Construction",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Gem",
+                  "qty": 30
+                },
+                {
+                  "item": "Epic Spirit Shard",
+                  "qty": 3
+                },
+                {
+                  "item": "Silver Scroll",
+                  "qty": 1
+                },
+                {
+                  "item": "Speedup 60m",
+                  "qty": 1
+                }
+              ]
+            },
+            {
+              "task": "Increase Power by 60.000 with Construction",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Gem",
+                  "qty": 100
+                },
+                {
+                  "item": "Legendary Spirit Shard",
+                  "qty": 1
+                },
+                {
+                  "item": "Golden Scroll",
+                  "qty": 1
+                },
+                {
+                  "item": "Speedup 60m",
+                  "qty": 2
+                }
+              ]
+            }
+          ]
+        },
+        "Day5": {
+          "label": "Stage 5",
+          "summary": "",
+          "scoring": [
+            {
+              "action": "Increase Power by 1 (Hero Power excluded)",
+              "points": 20,
+              "notes": null
+            }
+          ],
+          "tasks": [
+            {
+              "task": "Increase Power by 40.000",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Gem",
+                  "qty": 50
+                },
+                {
+                  "item": "Rare Spirit Badge",
+                  "qty": 1
+                },
+                {
+                  "item": "Silver Scroll",
+                  "qty": 1
+                },
+                {
+                  "item": "Speedup 5m",
+                  "qty": 5
+                }
+              ]
+            },
+            {
+              "task": "Increase Power by 80.000",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Gem",
+                  "qty": 100
+                },
+                {
+                  "item": "Rare Spirit Shard",
+                  "qty": 1
+                },
+                {
+                  "item": "Silver Scroll",
+                  "qty": 1
+                },
+                {
+                  "item": "Speedup 5m",
+                  "qty": 10
+                }
+              ]
+            },
+            {
+              "task": "Increase Power by 120.000",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Gem",
+                  "qty": 150
+                },
+                {
+                  "item": "Epic Spirit Shard",
+                  "qty": 1
+                },
+                {
+                  "item": "Golden Scroll",
+                  "qty": 1
+                },
+                {
+                  "item": "Speedup 5m",
+                  "qty": 15
+                }
+              ]
+            },
+            {
+              "task": "Increase Power by 180.000",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Gem",
+                  "qty": 200
+                },
+                {
+                  "item": "Epic Spirit Shard",
+                  "qty": 1
+                },
+                {
+                  "item": "Golden Scroll",
+                  "qty": 1
+                },
+                {
+                  "item": "Speedup 60m",
+                  "qty": 2
+                }
+              ]
+            },
+            {
+              "task": "Increase Power by 240.000",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Gem",
+                  "qty": 250
+                },
+                {
+                  "item": "Legendary Spirit Badge",
+                  "qty": 1
+                },
+                {
+                  "item": "Golden Scroll",
+                  "qty": 1
+                },
+                {
+                  "item": "Speedup 60m",
+                  "qty": 3
+                }
+              ]
+            },
+            {
+              "task": "Increase Power by 300.000",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Gem",
+                  "qty": 300
+                },
+                {
+                  "item": "Legendary Spirit Shard",
+                  "qty": 1
+                },
+                {
+                  "item": "Golden Scroll",
+                  "qty": 1
+                },
+                {
+                  "item": "Speedup 60m",
+                  "qty": 5
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "extras": {
+        "rankings": {
+          "daily": [
+            {
+              "range": "1",
+              "rewards": [
+                {
+                  "item": "Hero Shard",
+                  "qty": 10
+                },
+                {
+                  "item": "Gem",
+                  "qty": 500
+                },
+                {
+                  "item": "Book of Experience (1.000)",
+                  "qty": 100
+                },
+                {
+                  "item": "50.000 Food",
+                  "qty": 30
+                },
+                {
+                  "item": "50.000 Wood",
+                  "qty": 30
+                }
+              ]
+            },
+            {
+              "range": "2",
+              "rewards": [
+                {
+                  "item": "Hero Shard",
+                  "qty": 5
+                },
+                {
+                  "item": "Gem",
+                  "qty": 300
+                },
+                {
+                  "item": "Book of Experience (1.000)",
+                  "qty": 80
+                },
+                {
+                  "item": "50.000 Food",
+                  "qty": 25
+                },
+                {
+                  "item": "50.000 Wood",
+                  "qty": 25
+                }
+              ]
+            },
+            {
+              "range": "3",
+              "rewards": [
+                {
+                  "item": "Hero Shard",
+                  "qty": 2
+                },
+                {
+                  "item": "Gem",
+                  "qty": 200
+                },
+                {
+                  "item": "Book of Experience (1.000)",
+                  "qty": 60
+                },
+                {
+                  "item": "50.000 Food",
+                  "qty": 20
+                },
+                {
+                  "item": "50.000 Wood",
+                  "qty": 20
+                }
+              ]
+            },
+            {
+              "range": "4 ~ 5",
+              "rewards": [
+                {
+                  "item": "Gem",
+                  "qty": 100
+                },
+                {
+                  "item": "Book of Experience (1.000)",
+                  "qty": 40
+                },
+                {
+                  "item": "50.000 Food",
+                  "qty": 15
+                },
+                {
+                  "item": "50.000 Wood",
+                  "qty": 15
+                },
+                {
+                  "item": "50.000 Stone",
+                  "qty": 15
+                }
+              ]
+            },
+            {
+              "range": "6 ~ 10",
+              "rewards": [
+                {
+                  "item": "Gem",
+                  "qty": 50
+                },
+                {
+                  "item": "Book of Experience (1.000)",
+                  "qty": 30
+                },
+                {
+                  "item": "50.000 Food",
+                  "qty": 10
+                },
+                {
+                  "item": "50.000 Wood",
+                  "qty": 10
+                },
+                {
+                  "item": "50.000 Stone",
+                  "qty": 10
+                }
+              ]
+            },
+            {
+              "range": "11 ~ 15",
+              "rewards": [
+                {
+                  "item": "Gem",
+                  "qty": 40
+                },
+                {
+                  "item": "Book of Experience (1.000)",
+                  "qty": 20
+                },
+                {
+                  "item": "50.000 Food",
+                  "qty": 5
+                },
+                {
+                  "item": "50.000 Wood",
+                  "qty": 5
+                },
+                {
+                  "item": "50.000 Stone",
+                  "qty": 5
+                }
+              ]
+            },
+            {
+              "range": "16 ~ 20",
+              "rewards": [
+                {
+                  "item": "Gem",
+                  "qty": 30
+                },
+                {
+                  "item": "Book of Experience (1.000)",
+                  "qty": 10
+                },
+                {
+                  "item": "50.000 Food",
+                  "qty": 4
+                },
+                {
+                  "item": "50.000 Wood",
+                  "qty": 4
+                },
+                {
+                  "item": "50.000 Stone",
+                  "qty": 4
+                }
+              ]
+            },
+            {
+              "range": "21 ~ 25",
+              "rewards": [
+                {
+                  "item": "Gem",
+                  "qty": 20
+                },
+                {
+                  "item": "Book of Experience (1.000)",
+                  "qty": 5
+                },
+                {
+                  "item": "50.000 Food",
+                  "qty": 3
+                },
+                {
+                  "item": "50.000 Wood",
+                  "qty": 3
+                },
+                {
+                  "item": "50.000 Stone",
+                  "qty": 3
+                }
+              ]
+            },
+            {
+              "range": "26 ~ 50",
+              "rewards": [
+                {
+                  "item": "Gem",
+                  "qty": 10
+                },
+                {
+                  "item": "Book of Experience (1.000)",
+                  "qty": 3
+                },
+                {
+                  "item": "50.000 Food",
+                  "qty": 2
+                },
+                {
+                  "item": "50.000 Wood",
+                  "qty": 2
+                },
+                {
+                  "item": "50.000 Stone",
+                  "qty": 2
+                }
+              ]
+            },
+            {
+              "range": "51 ~ 100",
+              "rewards": [
+                {
+                  "item": "Gem",
+                  "qty": 5
+                },
+                {
+                  "item": "Book of Experience (1.000)",
+                  "qty": 2
+                },
+                {
+                  "item": "50.000 Food",
+                  "qty": 1
+                },
+                {
+                  "item": "50.000 Wood",
+                  "qty": 1
+                },
+                {
+                  "item": "50.000 Stone",
+                  "qty": 1
+                }
+              ]
+            }
+          ],
+          "overall": [
+            {
+              "range": "1",
+              "rewards": [
+                {
+                  "item": "Hero Shard",
+                  "qty": 200
+                },
+                {
+                  "item": "Gem",
+                  "qty": 2000
+                },
+                {
+                  "item": "Speedup 60m",
+                  "qty": 30
+                },
+                {
+                  "item": "50.000 Food",
+                  "qty": 100
+                },
+                {
+                  "item": "50.000 Wood",
+                  "qty": 100
+                }
+              ]
+            },
+            {
+              "range": "2",
+              "rewards": [
+                {
+                  "item": "Hero Shard",
+                  "qty": 150
+                },
+                {
+                  "item": "Gem",
+                  "qty": 1500
+                },
+                {
+                  "item": "Speedup 60m",
+                  "qty": 25
+                },
+                {
+                  "item": "50.000 Food",
+                  "qty": 80
+                },
+                {
+                  "item": "50.000 Wood",
+                  "qty": 80
+                }
+              ]
+            },
+            {
+              "range": "3",
+              "rewards": [
+                {
+                  "item": "Hero Shard",
+                  "qty": 100
+                },
+                {
+                  "item": "Gem",
+                  "qty": 1000
+                },
+                {
+                  "item": "Speedup 60m",
+                  "qty": 20
+                },
+                {
+                  "item": "50.000 Food",
+                  "qty": 70
+                },
+                {
+                  "item": "50.000 Wood",
+                  "qty": 70
+                }
+              ]
+            },
+            {
+              "range": "4 ~ 5",
+              "rewards": [
+                {
+                  "item": "Hero Shard",
+                  "qty": 70
+                },
+                {
+                  "item": "Gem",
+                  "qty": 700
+                },
+                {
+                  "item": "Speedup 60m",
+                  "qty": 15
+                },
+                {
+                  "item": "50.000 Food",
+                  "qty": 60
+                },
+                {
+                  "item": "50.000 Wood",
+                  "qty": 60
+                }
+              ]
+            },
+            {
+              "range": "6 ~ 10",
+              "rewards": [
+                {
+                  "item": "Hero Shard",
+                  "qty": 50
+                },
+                {
+                  "item": "Gem",
+                  "qty": 500
+                },
+                {
+                  "item": "Speedup 60m",
+                  "qty": 12
+                },
+                {
+                  "item": "50.000 Food",
+                  "qty": 50
+                },
+                {
+                  "item": "50.000 Wood",
+                  "qty": 50
+                }
+              ]
+            },
+            {
+              "range": "11 ~ 15",
+              "rewards": [
+                {
+                  "item": "Hero Shard",
+                  "qty": 30
+                },
+                {
+                  "item": "Gem",
+                  "qty": 300
+                },
+                {
+                  "item": "Speedup 60m",
+                  "qty": 10
+                },
+                {
+                  "item": "50.000 Food",
+                  "qty": 40
+                },
+                {
+                  "item": "50.000 Wood",
+                  "qty": 40
+                }
+              ]
+            },
+            {
+              "range": "16 ~ 20",
+              "rewards": [
+                {
+                  "item": "Hero Shard",
+                  "qty": 20
+                },
+                {
+                  "item": "Gem",
+                  "qty": 200
+                },
+                {
+                  "item": "Speedup 60m",
+                  "qty": 8
+                },
+                {
+                  "item": "50.000 Food",
+                  "qty": 30
+                },
+                {
+                  "item": "50.000 Wood",
+                  "qty": 30
+                }
+              ]
+            },
+            {
+              "range": "21 ~ 25",
+              "rewards": [
+                {
+                  "item": "Hero Shard",
+                  "qty": 10
+                },
+                {
+                  "item": "Gem",
+                  "qty": 100
+                },
+                {
+                  "item": "Speedup 60m",
+                  "qty": 6
+                },
+                {
+                  "item": "50.000 Food",
+                  "qty": 20
+                },
+                {
+                  "item": "50.000 Wood",
+                  "qty": 20
+                }
+              ]
+            },
+            {
+              "range": "26 ~ 50",
+              "rewards": [
+                {
+                  "item": "Hero Shard",
+                  "qty": 5
+                },
+                {
+                  "item": "Gem",
+                  "qty": 50
+                },
+                {
+                  "item": "Speedup 60m",
+                  "qty": 6
+                },
+                {
+                  "item": "50.000 Food",
+                  "qty": 10
+                },
+                {
+                  "item": "50.000 Wood",
+                  "qty": 10
+                }
+              ]
+            },
+            {
+              "range": "51 ~ 100",
+              "rewards": [
+                {
+                  "item": "Hero Shard",
+                  "qty": 2
+                },
+                {
+                  "item": "Gem",
+                  "qty": 20
+                },
+                {
+                  "item": "Speedup 60m",
+                  "qty": 2
+                },
+                {
+                  "item": "50.000 Food",
+                  "qty": 5
+                },
+                {
+                  "item": "50.000 Wood",
+                  "qty": 5
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "avatar-day-festival",
+      "name": "Avatar Day Festival",
+      "summary": "",
+      "description": "",
+      "days": {
+        "Day1": {
+          "label": "Day 1",
+          "summary": "",
+          "scoring": [],
+          "tasks": [
+            {
+              "task": "Login 1 Day(s)",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Aang Cookie",
+                  "qty": 1
+                },
+                {
+                  "item": "Book of Experience (1.000)",
+                  "qty": 1
+                },
+                {
+                  "item": "10.000 Food",
+                  "qty": 1
+                },
+                {
+                  "item": "10.000 Wood",
+                  "qty": 1
+                },
+                {
+                  "item": "10.000 Stone",
+                  "qty": 1
+                }
+              ]
+            },
+            {
+              "task": "Login 2 Day(s)",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Aang Cookie",
+                  "qty": 2
+                },
+                {
+                  "item": "Book of Experience (1.000)",
+                  "qty": 2
+                },
+                {
+                  "item": "10.000 Food",
+                  "qty": 2
+                },
+                {
+                  "item": "10.000 Wood",
+                  "qty": 2
+                },
+                {
+                  "item": "10.000 Stone",
+                  "qty": 2
+                }
+              ]
+            },
+            {
+              "task": "Login 3 Day(s)",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Aang Cookie",
+                  "qty": 3
+                },
+                {
+                  "item": "Book of Experience (5.000)",
+                  "qty": 1
+                },
+                {
+                  "item": "10.000 Food",
+                  "qty": 3
+                },
+                {
+                  "item": "10.000 Wood",
+                  "qty": 3
+                },
+                {
+                  "item": "10.000 Stone",
+                  "qty": 3
+                }
+              ]
+            },
+            {
+              "task": "Login 4 Day(s)",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Aang Cookie",
+                  "qty": 4
+                },
+                {
+                  "item": "Silver Scroll",
+                  "qty": 1
+                },
+                {
+                  "item": "10.000 Food",
+                  "qty": 4
+                },
+                {
+                  "item": "10.000 Wood",
+                  "qty": 4
+                },
+                {
+                  "item": "10.000 Stone",
+                  "qty": 4
+                }
+              ]
+            },
+            {
+              "task": "Login 5 Day(s)",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Aang Cookie",
+                  "qty": 5
+                },
+                {
+                  "item": "Golden Scroll",
+                  "qty": 1
+                },
+                {
+                  "item": "10.000 Food",
+                  "qty": 5
+                },
+                {
+                  "item": "10.000 Wood",
+                  "qty": 5
+                },
+                {
+                  "item": "10.000 Stone",
+                  "qty": 5
+                }
+              ]
+            },
+            {
+              "task": "Recruit 3.000 Benders",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Aang Cookie",
+                  "qty": 1
+                },
+                {
+                  "item": "Research Speedup 60m",
+                  "qty": 1
+                },
+                {
+                  "item": "50.000 Food",
+                  "qty": 1
+                },
+                {
+                  "item": "50.000 Wood",
+                  "qty": 1
+                },
+                {
+                  "item": "50.000 Stone",
+                  "qty": 1
+                }
+              ]
+            },
+            {
+              "task": "Recruit 6.000 Benders",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Aang Cookie",
+                  "qty": 3
+                },
+                {
+                  "item": "Research Speedup 60m",
+                  "qty": 2
+                },
+                {
+                  "item": "50.000 Food",
+                  "qty": 3
+                },
+                {
+                  "item": "50.000 Wood",
+                  "qty": 3
+                },
+                {
+                  "item": "50.000 Stone",
+                  "qty": 3
+                }
+              ]
+            },
+            {
+              "task": "Recruit 12.000 Benders",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Aang Cookie",
+                  "qty": 5
+                },
+                {
+                  "item": "Silver Scroll",
+                  "qty": 1
+                },
+                {
+                  "item": "Research Speedup 60m",
+                  "qty": 3
+                },
+                {
+                  "item": "50.000 Food",
+                  "qty": 5
+                },
+                {
+                  "item": "50.000 Wood",
+                  "qty": 5
+                },
+                {
+                  "item": "50.000 Stone",
+                  "qty": 5
+                }
+              ]
+            },
+            {
+              "task": "Recruit 20.000 Benders",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Aang Cookie",
+                  "qty": 5
+                },
+                {
+                  "item": "Golden Scroll",
+                  "qty": 1
+                },
+                {
+                  "item": "Research Speedup 60m",
+                  "qty": 5
+                },
+                {
+                  "item": "50.000 Food",
+                  "qty": 10
+                },
+                {
+                  "item": "50.000 Wood",
+                  "qty": 10
+                },
+                {
+                  "item": "50.000 Stone",
+                  "qty": 10
+                }
+              ]
+            }
+          ]
+        },
+        "Day2": {
+          "label": "Day 2",
+          "summary": "",
+          "scoring": [],
+          "tasks": [
+            {
+              "task": "Use 500 AP",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Aang Cookie",
+                  "qty": 1
+                },
+                {
+                  "item": "Book of Experience (5.000)",
+                  "qty": 1
+                },
+                {
+                  "item": "50.000 Food",
+                  "qty": 1
+                },
+                {
+                  "item": "50.000 Wood",
+                  "qty": 1
+                },
+                {
+                  "item": "50.000 Stone",
+                  "qty": 1
+                }
+              ]
+            },
+            {
+              "task": "Use 1.000 AP",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Aang Cookie",
+                  "qty": 3
+                },
+                {
+                  "item": "Silver Scroll",
+                  "qty": 1
+                },
+                {
+                  "item": "50.000 Food",
+                  "qty": 3
+                },
+                {
+                  "item": "50.000 Wood",
+                  "qty": 3
+                },
+                {
+                  "item": "50.000 Stone",
+                  "qty": 3
+                }
+              ]
+            },
+            {
+              "task": "Use 2.000 AP",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Aang Cookie",
+                  "qty": 5
+                },
+                {
+                  "item": "Golden Scroll",
+                  "qty": 1
+                },
+                {
+                  "item": "50.000 Food",
+                  "qty": 5
+                },
+                {
+                  "item": "50.000 Wood",
+                  "qty": 5
+                },
+                {
+                  "item": "50.000 Stone",
+                  "qty": 5
+                }
+              ]
+            },
+            {
+              "task": "Gather 100.000 resources from the field",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Aang Cookie",
+                  "qty": 1
+                },
+                {
+                  "item": "Book of Experience (5.000)",
+                  "qty": 1
+                },
+                {
+                  "item": "Construction Speedup 5m",
+                  "qty": 5
+                },
+                {
+                  "item": "Recruitment Speedup 5m",
+                  "qty": 5
+                },
+                {
+                  "item": "Research Speedup 5m",
+                  "qty": 5
+                }
+              ]
+            },
+            {
+              "task": "Gather 200.000 resources from the field",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Aang Cookie",
+                  "qty": 2
+                },
+                {
+                  "item": "Silver Scroll",
+                  "qty": 1
+                },
+                {
+                  "item": "Construction Speedup 5m",
+                  "qty": 10
+                },
+                {
+                  "item": "Recruitment Speedup 5m",
+                  "qty": 10
+                },
+                {
+                  "item": "Research Speedup 5m",
+                  "qty": 10
+                }
+              ]
+            },
+            {
+              "task": "Gather 400.000 resources from the field",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Aang Cookie",
+                  "qty": 3
+                },
+                {
+                  "item": "Golden Scroll",
+                  "qty": 1
+                },
+                {
+                  "item": "Construction Speedup 5m",
+                  "qty": 15
+                },
+                {
+                  "item": "Recruitment Speedup 5m",
+                  "qty": 15
+                },
+                {
+                  "item": "Research Speedup 5m",
+                  "qty": 15
+                }
+              ]
+            },
+            {
+              "task": "Gather 800.000 resources from the field",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Aang Cookie",
+                  "qty": 5
+                },
+                {
+                  "item": "Golden Scroll",
+                  "qty": 2
+                },
+                {
+                  "item": "Construction Speedup 60m",
+                  "qty": 2
+                },
+                {
+                  "item": "Recruitment Speedup 60m",
+                  "qty": 2
+                },
+                {
+                  "item": "Research Speedup 60m",
+                  "qty": 2
+                }
+              ]
+            }
+          ]
+        },
+        "Day3": {
+          "label": "Day 3",
+          "summary": "",
+          "scoring": [],
+          "tasks": [
+            {
+              "task": "Increase Power by 40.000 with Construction",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Aang Cookie",
+                  "qty": 1
+                },
+                {
+                  "item": "Book of Experience (5.000)",
+                  "qty": 1
+                },
+                {
+                  "item": "Construction Speedup 5m",
+                  "qty": 5
+                },
+                {
+                  "item": "Recruitment Speedup 5m",
+                  "qty": 5
+                },
+                {
+                  "item": "Research Speedup 5m",
+                  "qty": 5
+                }
+              ]
+            },
+            {
+              "task": "Increase Power by 80.000 with Construction",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Aang Cookie",
+                  "qty": 3
+                },
+                {
+                  "item": "Silver Scroll",
+                  "qty": 1
+                },
+                {
+                  "item": "Construction Speedup 60m",
+                  "qty": 1
+                },
+                {
+                  "item": "Recruitment Speedup 60m",
+                  "qty": 1
+                },
+                {
+                  "item": "Research Speedup 60m",
+                  "qty": 1
+                }
+              ]
+            },
+            {
+              "task": "Increase Power by 120.000 with Construction",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Aang Cookie",
+                  "qty": 5
+                },
+                {
+                  "item": "Golden Scroll",
+                  "qty": 1
+                },
+                {
+                  "item": "Construction Speedup 60m",
+                  "qty": 2
+                },
+                {
+                  "item": "Recruitment Speedup 60m",
+                  "qty": 2
+                },
+                {
+                  "item": "Research Speedup 60m",
+                  "qty": 2
+                }
+              ]
+            },
+            {
+              "task": "Complete Expedition missions 10 time(s)",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Aang Cookie",
+                  "qty": 1
+                },
+                {
+                  "item": "Book of Experience (5.000)",
+                  "qty": 1
+                },
+                {
+                  "item": "50.000 Food",
+                  "qty": 1
+                },
+                {
+                  "item": "50.000 Wood",
+                  "qty": 1
+                },
+                {
+                  "item": "50.000 Stone",
+                  "qty": 1
+                }
+              ]
+            },
+            {
+              "task": "Complete Expedition missions 20 time(s)",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Aang Cookie",
+                  "qty": 3
+                },
+                {
+                  "item": "Silver Scroll",
+                  "qty": 1
+                },
+                {
+                  "item": "50.000 Food",
+                  "qty": 3
+                },
+                {
+                  "item": "50.000 Wood",
+                  "qty": 3
+                },
+                {
+                  "item": "50.000 Stone",
+                  "qty": 3
+                }
+              ]
+            },
+            {
+              "task": "Complete Expedition missions 30 time(s)",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Aang Cookie",
+                  "qty": 5
+                },
+                {
+                  "item": "Golden Scroll",
+                  "qty": 1
+                },
+                {
+                  "item": "10.000 Food",
+                  "qty": 5
+                },
+                {
+                  "item": "10.000 Wood",
+                  "qty": 5
+                },
+                {
+                  "item": "10.000 Stone",
+                  "qty": 5
+                }
+              ]
+            }
+          ]
+        },
+        "Day4": {
+          "label": "Day 4",
+          "summary": "",
+          "scoring": [],
+          "tasks": [
+            {
+              "task": "Harvest 10.000 resources in the city",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Aang Cookie",
+                  "qty": 1
+                },
+                {
+                  "item": "Book of Experience (1.000)",
+                  "qty": 2
+                },
+                {
+                  "item": "10.000 Food",
+                  "qty": 1
+                },
+                {
+                  "item": "10.000 Wood",
+                  "qty": 1
+                },
+                {
+                  "item": "10.000 Stone",
+                  "qty": 1
+                }
+              ]
+            },
+            {
+              "task": "Harvest 50.000 resources in the city",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Aang Cookie",
+                  "qty": 2
+                },
+                {
+                  "item": "Book of Experience (5.000)",
+                  "qty": 1
+                },
+                {
+                  "item": "10.000 Food",
+                  "qty": 3
+                },
+                {
+                  "item": "10.000 Wood",
+                  "qty": 3
+                },
+                {
+                  "item": "10.000 Stone",
+                  "qty": 3
+                }
+              ]
+            },
+            {
+              "task": "Harvest 10.000 resources in the city",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Aang Cookie",
+                  "qty": 3
+                },
+                {
+                  "item": "Silver Scroll",
+                  "qty": 1
+                },
+                {
+                  "item": "50.000 Food",
+                  "qty": 1
+                },
+                {
+                  "item": "50.000 Wood",
+                  "qty": 1
+                },
+                {
+                  "item": "50.000 Stone",
+                  "qty": 1
+                }
+              ]
+            },
+            {
+              "task": "Harvest 150.000 resources in the city",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Aang Cookie",
+                  "qty": 5
+                },
+                {
+                  "item": "Golden Scroll",
+                  "qty": 1
+                },
+                {
+                  "item": "50.000 Food",
+                  "qty": 3
+                },
+                {
+                  "item": "50.000 Wood",
+                  "qty": 3
+                },
+                {
+                  "item": "50.000 Stone",
+                  "qty": 3
+                }
+              ]
+            },
+            {
+              "task": "Increase Power by 20.000 with Research",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Aang Cookie",
+                  "qty": 1
+                },
+                {
+                  "item": "Book of Experience (5.000)",
+                  "qty": 1
+                },
+                {
+                  "item": "Construction Speedup 5m",
+                  "qty": 1
+                },
+                {
+                  "item": "Recruitment Speedup 5m",
+                  "qty": 1
+                },
+                {
+                  "item": "Research Speedup 5m",
+                  "qty": 1
+                }
+              ]
+            },
+            {
+              "task": "Increase Power by 40.000 with Research",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Aang Cookie",
+                  "qty": 3
+                },
+                {
+                  "item": "Silver Scroll",
+                  "qty": 1
+                },
+                {
+                  "item": "Construction Speedup 60m",
+                  "qty": 1
+                },
+                {
+                  "item": "Recruitment Speedup 60m",
+                  "qty": 1
+                },
+                {
+                  "item": "Research Speedup 60m",
+                  "qty": 1
+                }
+              ]
+            },
+            {
+              "task": "Increase Power by 60.000 with Research",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Aang Cookie",
+                  "qty": 5
+                },
+                {
+                  "item": "Golden Scroll",
+                  "qty": 1
+                },
+                {
+                  "item": "Construction Speedup 60m",
+                  "qty": 2
+                },
+                {
+                  "item": "Recruitment Speedup 60m",
+                  "qty": 2
+                },
+                {
+                  "item": "Research Speedup 60m",
+                  "qty": 2
+                }
+              ]
+            }
+          ]
+        },
+        "Day5": {
+          "label": "Day 5",
+          "summary": "",
+          "scoring": [],
+          "tasks": [
+            {
+              "task": "Defeat Shattered Skulls 5 time(s)",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Aang Cookie",
+                  "qty": 1
+                },
+                {
+                  "item": "Book of Experience (5.000)",
+                  "qty": 1
+                },
+                {
+                  "item": "10.000 Food",
+                  "qty": 2
+                },
+                {
+                  "item": "10.000 Wood",
+                  "qty": 2
+                },
+                {
+                  "item": "10.000 Stone",
+                  "qty": 2
+                }
+              ]
+            },
+            {
+              "task": "Defeat Shattered Skulls 10 time(s)",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Aang Cookie",
+                  "qty": 3
+                },
+                {
+                  "item": "Book of Experience (5.000)",
+                  "qty": 2
+                },
+                {
+                  "item": "50.000 Food",
+                  "qty": 1
+                },
+                {
+                  "item": "50.000 Wood",
+                  "qty": 1
+                },
+                {
+                  "item": "50.000 Stone",
+                  "qty": 1
+                }
+              ]
+            },
+            {
+              "task": "Defeat Shattered Skulls 20 time(s)",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Aang Cookie",
+                  "qty": 5
+                },
+                {
+                  "item": "Silver Scroll",
+                  "qty": 1
+                },
+                {
+                  "item": "50.000 Food",
+                  "qty": 3
+                },
+                {
+                  "item": "50.000 Wood",
+                  "qty": 3
+                },
+                {
+                  "item": "50.000 Stone",
+                  "qty": 3
+                }
+              ]
+            },
+            {
+              "task": "Defeat Shattered Skulls 30 time(s)",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Aang Cookie",
+                  "qty": 7
+                },
+                {
+                  "item": "Golden Scroll",
+                  "qty": 1
+                },
+                {
+                  "item": "50.000 Food",
+                  "qty": 5
+                },
+                {
+                  "item": "50.000 Wood",
+                  "qty": 5
+                },
+                {
+                  "item": "50.000 Stone",
+                  "qty": 5
+                }
+              ]
+            },
+            {
+              "task": "Use any Scrolls 5 time(s)",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Aang Cookie",
+                  "qty": 1
+                },
+                {
+                  "item": "Book of Experience (5.000)",
+                  "qty": 1
+                },
+                {
+                  "item": "Construction Speedup 5m",
+                  "qty": 2
+                },
+                {
+                  "item": "Recruitment Speedup 5m",
+                  "qty": 2
+                },
+                {
+                  "item": "Research Speedup 5m",
+                  "qty": 2
+                }
+              ]
+            },
+            {
+              "task": "Use any Scrolls 10 time(s)",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Aang Cookie",
+                  "qty": 3
+                },
+                {
+                  "item": "Silver Scroll",
+                  "qty": 1
+                },
+                {
+                  "item": "Construction Speedup 5m",
+                  "qty": 5
+                },
+                {
+                  "item": "Recruitment Speedup 5m",
+                  "qty": 5
+                },
+                {
+                  "item": "Research Speedup 5m",
+                  "qty": 5
+                }
+              ]
+            },
+            {
+              "task": "Use any Scrolls 15 time(s)",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Aang Cookie",
+                  "qty": 5
+                },
+                {
+                  "item": "Golden Scroll",
+                  "qty": 1
+                },
+                {
+                  "item": "Construction Speedup 60m",
+                  "qty": 1
+                },
+                {
+                  "item": "Recruitment Speedup 60m",
+                  "qty": 1
+                },
+                {
+                  "item": "Research Speedup 60m",
+                  "qty": 1
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "extras": {
+        "exchange": [
+          {
+            "cost": 1,
+            "currency": "Aang Cookie",
+            "item": "Speedup 60m",
+            "qty": 10
+          },
+          {
+            "cost": 1,
+            "currency": "Aang Cookie",
+            "item": "50.000 Food",
+            "qty": 10
+          },
+          {
+            "cost": 1,
+            "currency": "Aang Cookie",
+            "item": "50.000 Wood",
+            "qty": 10
+          },
+          {
+            "cost": 1,
+            "currency": "Aang Cookie",
+            "item": "50.000 Stone",
+            "qty": 10
+          },
+          {
+            "cost": 1,
+            "currency": "Aang Cookie",
+            "item": "25.000 Gold",
+            "qty": 10
+          },
+          {
+            "cost": 2,
+            "currency": "Aang Cookie",
+            "item": "Rare Spirit Shard",
+            "qty": 10
+          },
+          {
+            "cost": 2,
+            "currency": "Aang Cookie",
+            "item": "Rare Spirit Badge",
+            "qty": 10
+          },
+          {
+            "cost": 2,
+            "currency": "Aang Cookie",
+            "item": "Silver Scroll",
+            "qty": 10
+          },
+          {
+            "cost": 8,
+            "currency": "Aang Cookie",
+            "item": "Spirit Shard: Zuko",
+            "qty": 10
+          },
+          {
+            "cost": 8,
+            "currency": "Aang Cookie",
+            "item": "Spirit Shard: Katara",
+            "qty": 10
+          },
+          {
+            "cost": 8,
+            "currency": "Aang Cookie",
+            "item": "Spirit Shard: Toph",
+            "qty": 10
+          },
+          {
+            "cost": 8,
+            "currency": "Aang Cookie",
+            "item": "Spirit Shard: Tenzin",
+            "qty": 10
+          },
+          {
+            "cost": 10,
+            "currency": "Aang Cookie",
+            "item": "Golden Scroll",
+            "qty": 10
+          },
+          {
+            "cost": 10,
+            "currency": "Aang Cookie",
+            "item": "Reset Talents",
+            "qty": 1
+          },
+          {
+            "cost": 30,
+            "currency": "Aang Cookie",
+            "item": "Legendary Spirit Shard",
+            "qty": 2
+          },
+          {
+            "cost": 30,
+            "currency": "Aang Cookie",
+            "item": "Lengedary Spirit Badge",
+            "qty": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "journey-of-us",
+      "name": "Journey of Us",
+      "summary": "",
+      "description": "",
+      "days": {
+        "Day1": {
+          "label": "Day 1",
+          "summary": "",
+          "scoring": [],
+          "tasks": [
+            {
+              "task": "Use Silver Scroll 5 time(s)",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Silver Scroll",
+                  "qty": 1
+                },
+                {
+                  "item": "Book of Experience (1.000)",
+                  "qty": 1
+                },
+                {
+                  "item": "10.000 Food",
+                  "qty": 1
+                },
+                {
+                  "item": "10.000 Wood",
+                  "qty": 1
+                },
+                {
+                  "item": "10.000 Stone",
+                  "qty": 1
+                }
+              ]
+            },
+            {
+              "task": "Use Silver Scroll 20 time(s)",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Silver Scroll",
+                  "qty": 3
+                },
+                {
+                  "item": "Book of Experience (5.000)",
+                  "qty": 1
+                },
+                {
+                  "item": "10.000 Food",
+                  "qty": 3
+                },
+                {
+                  "item": "10.000 Wood",
+                  "qty": 3
+                },
+                {
+                  "item": "10.000 Stone",
+                  "qty": 3
+                }
+              ]
+            },
+            {
+              "task": "Use Golden Scroll 5 time(s)",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Golden Scroll",
+                  "qty": 1
+                },
+                {
+                  "item": "Book of Experience (1.000)",
+                  "qty": 1
+                },
+                {
+                  "item": "10.000 Food",
+                  "qty": 1
+                },
+                {
+                  "item": "10.000 Wood",
+                  "qty": 1
+                },
+                {
+                  "item": "10.000 Stone",
+                  "qty": 1
+                }
+              ]
+            },
+            {
+              "task": "Use Golden Scroll 20 time(s)",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Golden Scroll",
+                  "qty": 3
+                },
+                {
+                  "item": "Book of Experience (1.000)",
+                  "qty": 1
+                },
+                {
+                  "item": "10.000 Food",
+                  "qty": 3
+                },
+                {
+                  "item": "10.000 Wood",
+                  "qty": 3
+                },
+                {
+                  "item": "10.000 Stone",
+                  "qty": 3
+                }
+              ]
+            },
+            {
+              "task": "Send airship 4 time(s)",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Silver Scroll",
+                  "qty": 1
+                },
+                {
+                  "item": "Book of Experience (1.000)",
+                  "qty": 2
+                },
+                {
+                  "item": "Construction Speedup 5m",
+                  "qty": 5
+                },
+                {
+                  "item": "Recruitment Speedup 5m",
+                  "qty": 5
+                },
+                {
+                  "item": "Research Speedup 5m",
+                  "qty": 5
+                }
+              ]
+            },
+            {
+              "task": "Successfully raid another airship 4 time(s)",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Golden Scroll",
+                  "qty": 1
+                },
+                {
+                  "item": "Book of Experience (5.000)",
+                  "qty": 1
+                },
+                {
+                  "item": "Construction Speedup 60m",
+                  "qty": 1
+                },
+                {
+                  "item": "Recruitment Speedup 60m",
+                  "qty": 1
+                },
+                {
+                  "item": "Research Speedup 60m",
+                  "qty": 1
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "supply-quest",
+      "name": "Supply Quest",
+      "summary": "",
+      "description": "",
+      "days": {
+        "Day1": {
+          "label": "Day 1",
+          "summary": "",
+          "scoring": [
+            {
+              "action": "Defeat Shattered Skulls",
+              "points": 0,
+              "notes": null
+            },
+            {
+              "action": "Gather Resources",
+              "points": 0,
+              "notes": null
+            }
+          ],
+          "tasks": []
+        }
+      }
+    },
+    {
+      "id": "timeless",
+      "name": "Timeless",
+      "summary": "",
+      "description": "",
+      "days": {
+        "Day1": {
+          "label": "Day 1",
+          "summary": "",
+          "scoring": [],
+          "tasks": [
+            {
+              "task": "Use 200 Minutes of Speedup items",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Gem",
+                  "qty": 100
+                },
+                {
+                  "item": "Speedup 5m",
+                  "qty": 5
+                },
+                {
+                  "item": "150K Food",
+                  "qty": 1
+                },
+                {
+                  "item": "150K Wood",
+                  "qty": 1
+                },
+                {
+                  "item": "150K Stone",
+                  "qty": 1
+                },
+                {
+                  "item": "75.000 Gold",
+                  "qty": 1
+                }
+              ]
+            },
+            {
+              "task": "Use 1.000 Minutes of Speedup items",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Gem",
+                  "qty": 150
+                },
+                {
+                  "item": "Speedup 5m",
+                  "qty": 10
+                },
+                {
+                  "item": "150K Food",
+                  "qty": 2
+                },
+                {
+                  "item": "150K Wood",
+                  "qty": 2
+                },
+                {
+                  "item": "150K Stone",
+                  "qty": 2
+                },
+                {
+                  "item": "75.000 Gold",
+                  "qty": 2
+                }
+              ]
+            },
+            {
+              "task": "Use 3.000 Minutes of Speedup items",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Gem",
+                  "qty": 200
+                },
+                {
+                  "item": "Speedup 60m",
+                  "qty": 2
+                },
+                {
+                  "item": "150K Food",
+                  "qty": 3
+                },
+                {
+                  "item": "150K Wood",
+                  "qty": 3
+                },
+                {
+                  "item": "150K Stone",
+                  "qty": 3
+                },
+                {
+                  "item": "75.000 Gold",
+                  "qty": 3
+                }
+              ]
+            },
+            {
+              "task": "Use 6.000 Minutes of Speedup items",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Gem",
+                  "qty": 250
+                },
+                {
+                  "item": "Speedup 60m",
+                  "qty": 3
+                },
+                {
+                  "item": "150K Food",
+                  "qty": 4
+                },
+                {
+                  "item": "150K Wood",
+                  "qty": 4
+                },
+                {
+                  "item": "150K Stone",
+                  "qty": 4
+                },
+                {
+                  "item": "75.000 Gold",
+                  "qty": 4
+                }
+              ]
+            },
+            {
+              "task": "Use 12.000 Minutes of Speedup items",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Gem",
+                  "qty": 400
+                },
+                {
+                  "item": "Speedup 60m",
+                  "qty": 5
+                },
+                {
+                  "item": "150K Food",
+                  "qty": 5
+                },
+                {
+                  "item": "150K Wood",
+                  "qty": 5
+                },
+                {
+                  "item": "150K Stone",
+                  "qty": 5
+                },
+                {
+                  "item": "75.000 Gold",
+                  "qty": 5
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "unbreakable-will",
+      "name": "Unbreakable Will",
+      "summary": "",
+      "description": "",
+      "days": {
+        "Day1": {
+          "label": "Day 1",
+          "summary": "",
+          "scoring": [],
+          "tasks": [
+            {
+              "task": "Use 300 AP",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Construction Speedup 60m",
+                  "qty": 1
+                },
+                {
+                  "item": "10.000 Food",
+                  "qty": 1
+                },
+                {
+                  "item": "10.000 Wood",
+                  "qty": 1
+                },
+                {
+                  "item": "10.000 Stone",
+                  "qty": 1
+                }
+              ]
+            },
+            {
+              "task": "Use 1.000 AP",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Research Speedup 60m",
+                  "qty": 5
+                },
+                {
+                  "item": "10.000 Food",
+                  "qty": 3
+                },
+                {
+                  "item": "10.000 Wood",
+                  "qty": 3
+                },
+                {
+                  "item": "10.000 Stone",
+                  "qty": 3
+                }
+              ]
+            },
+            {
+              "task": "Recruit 1.000 Benders",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Book of Experience (5.000)",
+                  "qty": 1
+                },
+                {
+                  "item": "10.000 Food",
+                  "qty": 1
+                },
+                {
+                  "item": "10.000 Wood",
+                  "qty": 1
+                },
+                {
+                  "item": "10.000 Stone",
+                  "qty": 1
+                }
+              ]
+            },
+            {
+              "task": "Recruit 2.000 Benders",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Rare Spirit Shard",
+                  "qty": 1
+                },
+                {
+                  "item": "10.000 Food",
+                  "qty": 3
+                },
+                {
+                  "item": "10.000 Wood",
+                  "qty": 3
+                },
+                {
+                  "item": "10.000 Stone",
+                  "qty": 3
+                }
+              ]
+            },
+            {
+              "task": "Recruit 6.000 Benders",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Epic Spirit Shard",
+                  "qty": 1
+                },
+                {
+                  "item": "50.000 Food",
+                  "qty": 1
+                },
+                {
+                  "item": "50.000 Wood",
+                  "qty": 1
+                },
+                {
+                  "item": "50.000 Stone",
+                  "qty": 1
+                }
+              ]
+            },
+            {
+              "task": "Harvest 20.000 resources in the city",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Silver Scroll",
+                  "qty": 1
+                },
+                {
+                  "item": "Construction Speedup 5m",
+                  "qty": 1
+                },
+                {
+                  "item": "Recruitment Speedup 5m",
+                  "qty": 1
+                },
+                {
+                  "item": "Research Speedup 5m",
+                  "qty": 1
+                }
+              ]
+            },
+            {
+              "task": "Harvest 100.000 resources in the city",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Golden Scroll",
+                  "qty": 1
+                },
+                {
+                  "item": "Construction Speedup 5m",
+                  "qty": 3
+                },
+                {
+                  "item": "Recruitment Speedup 5m",
+                  "qty": 3
+                },
+                {
+                  "item": "Research Speedup 5m",
+                  "qty": 3
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "harvest-season",
+      "name": "Harvest Season",
+      "summary": "",
+      "description": "",
+      "days": {
+        "Day1": {
+          "label": "Day 1",
+          "summary": "",
+          "scoring": [],
+          "tasks": [
+            {
+              "task": "Gather 200.000 resources from the field",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Book of Experience (5.000)",
+                  "qty": 1
+                },
+                {
+                  "item": "10.000 Food",
+                  "qty": 1
+                },
+                {
+                  "item": "10.000 Wood",
+                  "qty": 1
+                },
+                {
+                  "item": "10.000 Stone",
+                  "qty": 1
+                }
+              ]
+            },
+            {
+              "task": "Gather 500.000 resources from the field",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Silver Scroll",
+                  "qty": 1
+                },
+                {
+                  "item": "10.000 Food",
+                  "qty": 3
+                },
+                {
+                  "item": "10.000 Wood",
+                  "qty": 3
+                },
+                {
+                  "item": "10.000 Stone",
+                  "qty": 3
+                }
+              ]
+            },
+            {
+              "task": "Gather 1.000.000 resources from the field",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Golden Scroll",
+                  "qty": 1
+                },
+                {
+                  "item": "50.000 Food",
+                  "qty": 1
+                },
+                {
+                  "item": "50.000 Wood",
+                  "qty": 1
+                },
+                {
+                  "item": "50.000 Stone",
+                  "qty": 1
+                }
+              ]
+            },
+            {
+              "task": "Purchase items at the Trading Post 5 time(s)",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Book of Experience (5.000)",
+                  "qty": 1
+                },
+                {
+                  "item": "Research Speedup 5m",
+                  "qty": 5
+                },
+                {
+                  "item": "AP Potion 100",
+                  "qty": 1
+                },
+                {
+                  "item": "Seal of Solidarity",
+                  "qty": 1
+                }
+              ]
+            },
+            {
+              "task": "Purchase items at the Trading Post 15 time(s)",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Silver Scroll",
+                  "qty": 1
+                },
+                {
+                  "item": "Research Speedup 60m",
+                  "qty": 1
+                },
+                {
+                  "item": "AP Potion 100",
+                  "qty": 3
+                },
+                {
+                  "item": "Seal of Solidarity",
+                  "qty": 2
+                }
+              ]
+            },
+            {
+              "task": "Purchase items at the Trading Post 30 time(s)",
+              "notes": null,
+              "reward": [
+                {
+                  "item": "Golden Scroll",
+                  "qty": 1
+                },
+                {
+                  "item": "Research Speedup 60m",
+                  "qty": 2
+                },
+                {
+                  "item": "AP Potion 100",
+                  "qty": 5
+                },
+                {
+                  "item": "Seal of Solidarity",
+                  "qty": 3
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

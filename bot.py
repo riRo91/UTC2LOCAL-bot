@@ -348,9 +348,9 @@ EVENTS: Dict[str, Dict[str, Any]] = {
     },
 }
 
-# -----------------------------
-# Bot Implementation
-# -----------------------------
+# =========================================
+# BOT BOOTSTRAP
+# =========================================
 class TimeBot(discord.Client):
     def __init__(self):
         intents = discord.Intents.default()
@@ -358,6 +358,7 @@ class TimeBot(discord.Client):
         self.tree = app_commands.CommandTree(self)
 
     async def setup_hook(self):
+        # Faster per-guild sync if GUILD_ID is set; otherwise global sync
         if GUILD_ID:
             try:
                 gid = int(GUILD_ID)
@@ -370,14 +371,16 @@ class TimeBot(discord.Client):
             await self.tree.sync()
             print("Slash commands globally synced.")
 
+
 bot = TimeBot()
 
-# -----------------------------
-# Helpers for formatting
-# -----------------------------
+
+# =========================================
+# HELPERS (formatting & data access)
+# =========================================
 def _chunk_lines(lines: List[str], limit: int = 950) -> List[str]:
-    """Split long lists of bullet lines into chunks under 'limit' characters (embed field value <= 1024)."""
-    chunks = []
+    """Split long bullet lists so each chunk stays under ~950 chars (embed field max is 1024)."""
+    chunks: List[str] = []
     cur = ""
     for line in lines:
         add = f"{line}\n"
@@ -391,24 +394,33 @@ def _chunk_lines(lines: List[str], limit: int = 950) -> List[str]:
         chunks.append(cur.rstrip())
     return chunks
 
+
 def _format_scoring(scoring: List[Tuple[str, int]]) -> List[str]:
-    out = []
+    if not scoring:
+        return ["• *(No point scoring specified for this day)*"]
+    out: List[str] = []
     for label, pts in scoring:
-        # Display in "+X points — Label" form
-        if isinstance(pts, int):
-            if pts >= 1000:
-                pts_str = f"{pts:,}"
-            else:
-                pts_str = str(pts)
-        else:
-            pts_str = str(pts)
+        pts_str = f"{pts:,}" if isinstance(pts, int) and pts >= 1000 else str(pts)
         out.append(f"• **+{pts_str}** — {label}")
-    return out if out else ["• *(No point scoring specified for this day)*"]
+    return out
+
 
 def _format_tasks(tasks: List[Tuple[str, str]]) -> List[str]:
     if not tasks:
         return ["• *(No tasks listed for this day)*"]
     return [f"• **{t}**\n  ↳ {r}" for t, r in tasks]
+
+
+def get_event_names() -> List[str]:
+    return list(EVENTS.keys())
+
+
+def get_day_names(event_name: str) -> List[str]:
+    ev = EVENTS.get(event_name)
+    if not ev:
+        return []
+    return [d["name"] for d in ev.get("days", [])]
+
 
 def build_event_embeds(event_name: str, day_name: str) -> List[discord.Embed]:
     ev = EVENTS[event_name]
@@ -419,72 +431,39 @@ def build_event_embeds(event_name: str, day_name: str) -> List[discord.Embed]:
     title = f"{event_name} • {day_name}"
     embed1 = discord.Embed(title=title, description=ev.get("description") or "", color=0x2B6CB0)
 
-    # Optional meta
-    meta_bits = []
-    if ev.get("duration_days"): meta_bits.append(f"**Duration:** {ev['duration_days']} day(s)")
-    if ev.get("repeats"): meta_bits.append(f"**Repeats:** {ev['repeats']}")
+    # Meta
+    meta_bits: List[str] = []
+    if ev.get("duration_days"):
+        meta_bits.append(f"**Duration:** {ev['duration_days']} day(s)")
+    if ev.get("repeats"):
+        meta_bits.append(f"**Repeats:** {ev['repeats']}")
     if meta_bits:
         embed1.add_field(name="Info", value="\n".join(meta_bits), inline=False)
 
     # Scoring
     scoring_lines = _format_scoring(day.get("scoring", []))
     for i, chunk in enumerate(_chunk_lines(scoring_lines)):
-        name = "Scoring" if i == 0 else "Scoring (cont.)"
-        embed1.add_field(name=name, value=chunk, inline=False)
+        embed1.add_field(name="Scoring" if i == 0 else "Scoring (cont.)", value=chunk, inline=False)
 
-    # Tasks & Rewards (second embed to avoid hitting total field limits)
+    # Tasks & Rewards — separate embed to avoid hitting field limits
     embed2 = discord.Embed(color=0x2B6CB0)
     task_lines = _format_tasks(day.get("tasks", []))
     for i, chunk in enumerate(_chunk_lines(task_lines)):
-        name = "Tasks & Rewards" if i == 0 else "Tasks & Rewards (cont.)"
-        embed2.add_field(name=name, value=chunk, inline=False)
+        embed2.add_field(name="Tasks & Rewards" if i == 0 else "Tasks & Rewards (cont.)",
+                         value=chunk, inline=False)
 
     if ev.get("notes"):
         embed2.set_footer(text=ev["notes"])
 
     return [embed1, embed2]
 
-def get_event_names() -> List[str]:
-    return list(EVENTS.keys())
 
-def get_day_names(event_name: str) -> List[str]:
-    ev = EVENTS.get(event_name)
-    if not ev:
-        return []
-    return [d["name"] for d in ev["days"]]
-
-# -----------------------------
-# Interactive Day Picker View
-# -----------------------------
-class DayPickerView(discord.ui.View):
-    def __init__(self, event_name: str, user_id: int):
-        super().__init__(timeout=120)
-        self.event_name = event_name
-        self.user_id = user_id
-        options = [discord.SelectOption(label=name) for name in get_day_names(event_name)]
-        self.select = discord.ui.Select(placeholder="Select a day/stage…", options=options, min_values=1, max_values=1)
-        self.select.callback = self._on_select
-        self.add_item(self.select)
-
-    async def interaction_check(self, interaction: discord.Interaction) -> bool:
-        # Ensure only the requesting user can use this selector
-        if interaction.user.id != self.user_id:
-            await interaction.response.send_message("This selector isn’t for you.", ephemeral=True)
-            return False
-        return True
-
-    async def _on_select(self, interaction: discord.Interaction):
-        day_name = self.select.values[0]
-        embeds = build_event_embeds(self.event_name, day_name)
-        # Replace the original ephemeral message with the result
-        await interaction.response.edit_message(content=None, embeds=embeds, view=None)
-
-# -----------------------------
-# Slash Commands
-# -----------------------------
+# =========================================
+# /utc COMMAND (original)
+# =========================================
 @bot.tree.command(
     name="utc",
-    description="Convert a UTC time to a Discord timestamp that renders in everyone's local time.",
+    description="Convert a UTC time to a Discord timestamp that renders in everyone's local time."
 )
 @app_commands.describe(when="Time in 'HH:MM' or 'YYYY-MM-DD HH:MM' (UTC)")
 async def utc(interaction: discord.Interaction, when: str):
@@ -494,10 +473,8 @@ async def utc(interaction: discord.Interaction, when: str):
     """
     try:
         if " " in when:
-            # Format: YYYY-MM-DD HH:MM interpreted as UTC
             dt = datetime.strptime(when, "%Y-%m-%d %H:%M").replace(tzinfo=timezone.utc)
         else:
-            # Format: HH:MM (UTC) -> assume today's date in UTC
             t = datetime.strptime(when, "%H:%M").time()
             today_utc = datetime.now(timezone.utc).date()
             dt = datetime.combine(today_utc, t).replace(tzinfo=timezone.utc)
@@ -514,18 +491,21 @@ async def utc(interaction: discord.Interaction, when: str):
             "Invalid format. Use **HH:MM** or **YYYY-MM-DD HH:MM** (UTC).", ephemeral=True
         )
 
-# -----------------------------
-# Autocomplete handlers (must be defined before they're used)
-# -----------------------------
+
+# =========================================
+# /event COMMAND — autocomplete + dropdown
+# =========================================
+# Autocomplete handlers MUST be coroutine functions and defined before use.
 async def autocomplete_event(
     interaction: discord.Interaction,
     current: str
 ) -> List[app_commands.Choice[str]]:
-    current_lower = (current or "").lower()
     names = get_event_names()
-    if current_lower:
-        names = [n for n in names if current_lower in n.lower()]
+    if current:
+        cl = current.lower()
+        names = [n for n in names if cl in n.lower()]
     return [app_commands.Choice(name=n, value=n) for n in names[:25]]
+
 
 async def autocomplete_day(
     interaction: discord.Interaction,
@@ -536,13 +516,46 @@ async def autocomplete_day(
     if not ev_name or ev_name not in EVENTS:
         return []
     day_names = get_day_names(ev_name)
-    current_lower = (current or "").lower()
-    if current_lower:
-        day_names = [n for n in day_names if current_lower in n.lower()]
+    if current:
+        cl = current.lower()
+        day_names = [n for n in day_names if cl in n.lower()]
     return [app_commands.Choice(name=n, value=n) for n in day_names[:25]]
 
 
-# /event command with autocomplete + optional interactive day picker
+# Canonical Select subclass for reliable callbacks across discord.py versions
+class DaySelect(discord.ui.Select):
+    def __init__(self, event_name: str):
+        self.event_name = event_name
+        options = [discord.SelectOption(label=name) for name in get_day_names(event_name)]
+        super().__init__(placeholder="Select a day/stage…", min_values=1, max_values=1, options=options)
+
+    async def callback(self, interaction: discord.Interaction):
+        try:
+            day_name = self.values[0]
+            embeds = build_event_embeds(self.event_name, day_name)
+            await interaction.response.edit_message(content=None, embeds=embeds, view=None)
+        except Exception as e:
+            await interaction.response.send_message(
+                f"Oops, I couldn’t render that day. `{type(e).__name__}: {e}`",
+                ephemeral=True,
+            )
+            raise
+
+
+class DayPickerView(discord.ui.View):
+    def __init__(self, event_name: str, user_id: int):
+        super().__init__(timeout=120)
+        self.event_name = event_name
+        self.user_id = user_id
+        self.add_item(DaySelect(event_name))
+
+    async def interaction_check(self, interaction: discord.Interaction) -> bool:
+        if interaction.user.id != self.user_id:
+            await interaction.response.send_message("This selector isn’t for you.", ephemeral=True)
+            return False
+        return True
+
+
 @bot.tree.command(
     name="event",
     description="Show scoring and personal tasks + rewards for a game event/day.",
@@ -550,84 +563,70 @@ async def autocomplete_day(
 @app_commands.describe(
     event="Event name (start typing for suggestions)",
     day="Day/Stage (optional—picker appears if omitted and multiple days exist)",
-    public="Check to post publicly; default is private (ephemeral)",
+    public="Post publicly? Defaults to private (ephemeral).",
 )
-
 @app_commands.autocomplete(event=autocomplete_event, day=autocomplete_day)
 async def event(
     interaction: discord.Interaction,
     event: str,
-    day: Optional[str] = None,
-    public: Optional[bool] = False,
+    day: str | None = None,
+    public: bool = False,
 ):
-    # Validate event
-    if event not in EVENTS:
-        suggestions = ", ".join(get_event_names())
+    try:
+        # Guard: no data loaded
+        if not EVENTS:
+            await interaction.response.send_message(
+                "No events are loaded yet. Paste your `EVENTS` dictionary into the bot code and redeploy.",
+                ephemeral=True,
+            )
+            return
+
+        if event not in EVENTS:
+            suggestions = ", ".join(get_event_names()) or "(no events loaded)"
+            await interaction.response.send_message(
+                f"Unknown event **{event}**. Try one of: {suggestions}",
+                ephemeral=True,
+            )
+            return
+
+        day_names = get_day_names(event)
+        if not day_names:
+            await interaction.response.send_message("No days found for that event.", ephemeral=True)
+            return
+
+        # If day not provided and multiple exist, show picker
+        if day is None and len(day_names) > 1:
+            view = DayPickerView(event_name=event, user_id=interaction.user.id)
+            await interaction.response.send_message(
+                f"**{event}** has multiple days. Pick one:",
+                view=view,
+                ephemeral=not public,
+            )
+            return
+
+        # Default to only day if single
+        if day is None:
+            day = day_names[0]
+        elif day not in day_names:
+            await interaction.response.send_message(
+                f"**{event}** doesn’t have a day/stage named **{day}**.\n"
+                f"Available: {', '.join(day_names)}",
+                ephemeral=True,
+            )
+            return
+
+        embeds = build_event_embeds(event, day)
+        await interaction.response.send_message(embeds=embeds, ephemeral=not public)
+
+    except Exception as e:
         await interaction.response.send_message(
-            f"Unknown event **{event}**. Try one of: {suggestions}",
+            f"Something went wrong running /event. `{type(e).__name__}: {e}`",
             ephemeral=True,
         )
-        return
+        raise
 
-    day_names = get_day_names(event)
-    if not day_names:
-        await interaction.response.send_message("No days found for that event.", ephemeral=True)
-        return
 
-    # If no day provided and multiple days exist, show interactive picker
-    if day is None and len(day_names) > 1:
-        view = DayPickerView(event_name=event, user_id=interaction.user.id)
-        await interaction.response.send_message(
-            f"**{event}** has multiple days. Pick one:",
-            view=view,
-            ephemeral=not public,
-        )
-        return
-
-    # If day provided (or only one day exists), validate and render
-    if day is None:
-        day = day_names[0]
-    elif day not in day_names:
-        await interaction.response.send_message(
-            f"**{event}** doesn’t have a day/stage named **{day}**.\n"
-            f"Available: {', '.join(day_names)}",
-            ephemeral=True,
-        )
-        return
-
-    embeds = build_event_embeds(event, day)
-    await interaction.response.send_message(embeds=embeds, ephemeral=not public)
-
-# -----------------------------
-# Autocomplete handlers
-# -----------------------------
-async def autocomplete_event(interaction: discord.Interaction, current: str):
-    current_lower = (current or "").lower()
-    names = get_event_names()
-    if current_lower:
-        names = [n for n in names if current_lower in n.lower()]
-    # Discord allows up to 25 choices
-    return [app_commands.Choice(name=n, value=n) for n in names[:25]]
-
-async def autocomplete_day(interaction: discord.Interaction, current: str):
-    # Attempt to get the value typed/selected for 'event'
-    ns = interaction.namespace
-    ev_name = getattr(ns, "event", None)
-    if not ev_name or ev_name not in EVENTS:
-        # If event isn't selected yet, show nothing for day
-        return []
-    day_names = get_day_names(ev_name)
-    current_lower = (current or "").lower()
-    if current_lower:
-        day_names = [n for n in day_names if current_lower in n.lower()]
-    return [app_commands.Choice(name=n, value=n) for n in day_names[:25]]
-
-# -----------------------------
-# Boot
-# -----------------------------
-if not TOKEN:
-    raise SystemExit(
-        "Set your token first: export DISCORD_TOKEN=... (macOS/Linux) or $env:DISCORD_TOKEN='...' (PowerShell)"
-    )
-
+# =========================================
+# RUN
+# =========================================
 bot.run(TOKEN)
